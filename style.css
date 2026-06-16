@@ -130,6 +130,7 @@ button:active {
   padding: 0.6rem;
   border-radius: 2rem;
   color: var(--Orange-500);
+  font-size: 1.5rem;
 }
 .thank-you {
   width: 19rem;
