@@ -58,14 +58,21 @@ h1 {
   color: var(--White);
   margin-block-end: 1rem;
 }
-.rating-no {
-  display: flex;
-  justify-content: space-between;
-}
+
 p {
   font-weight: 400;
   font-size: 1.5rem;
   color: var(--Grey-500);
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+}
+.rating-no {
+  display: flex;
+  justify-content: space-between;
 }
 .no {
   font-family: "Overpass", sans-serif;
@@ -78,12 +85,7 @@ p {
   border-radius: 50%;
   background-color: var(--Grey-700);
 }
-button:hover {
-  cursor: pointer;
-}
-button:active {
-  transform: scale(0.95);
-}
+
 .no:hover {
   background-color: var(--Orange-500);
   color: var(--Grey-950);
@@ -92,9 +94,7 @@ button:active {
   background-color: var(--White);
   color: var(--Grey-950);
 }
-.submit-btn:hover {
-  background-color: var(--White);
-}
+
 .submit-btn {
   letter-spacing: 0.2rem;
   font-weight: 700;
@@ -104,6 +104,9 @@ button:active {
   border: none;
   color: var(--Grey-950);
   background-color: var(--Orange-500);
+}
+.submit-btn:hover {
+  background-color: var(--White);
 }
 
 /* thank you page styling */
