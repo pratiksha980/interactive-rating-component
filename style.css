@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Orange-500: hsl(25, 97%, 53%);
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-700: hsl(218, 17%, 25%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+}
+html {
+  font-size: 62.5%; /* Makes 1rem = 10px */
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.4;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Grey-950);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2.5rem;
+}
+/* rating page styling */
+.rating-container {
+  padding: 2.8rem;
+  display: flex;
+  border-radius: 2rem;
+  gap: 3rem;
+  width: min(100%, 37.5rem);
+  flex-direction: column;
+  background-color: var(--Grey-900);
+}
+
+.img-container {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--Grey-700);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star {
+  width: 2rem;
+  height: 2rem;
+}
+h1 {
+  font-weight: 700;
+  color: var(--White);
+  margin-block-end: 1rem;
+}
+.rating-no {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--Grey-500);
+}
+.no {
+  font-family: "Overpass", sans-serif;
+  padding: 0.4rem;
+  width: 4rem;
+  height: 4rem;
+  color: var(--Grey-500);
+  border: none;
+  font-weight: 700;
+  border-radius: 50%;
+  background-color: var(--Grey-700);
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+}
+.no:hover {
+  background-color: var(--Orange-500);
+  color: var(--Grey-950);
+}
+.no.selected {
+  background-color: var(--White);
+  color: var(--Grey-950);
+}
+.submit-btn:hover {
+  background-color: var(--White);
+}
+.submit-btn {
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  color: var(--Grey-950);
+  background-color: var(--Orange-500);
+}
+
+/* thank you page styling */
+.thankyou-container {
+  padding: 2.8rem;
+  display: flex;
+  border-radius: 2rem;
+  gap: 3.2rem;
+  align-items: center;
+  text-align: center;
+  width: min(100%, 37.5rem);
+  flex-direction: column;
+  background-color: var(--Grey-900);
+}
+.rating-message {
+  background-color: var(--Grey-700);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  color: var(--Orange-500);
+}
+.thank-you {
+  width: 19rem;
+}
+.hidden {
+  display: none;
+}
